@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mover {
+    display: block;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    height: 300px;
+    width: 400px;
+    transition: width 2s, height 2s, transform 7s;
+}
+
+img {
+    height: 300px;
+    width: 390px;
+}
+
+.animate
+{
+    width: 100px;
+    height: 100px;
+    transform: rotate(720deg);
+    transition-delay: 2s;
+    
+    animation: myanimation 5s;
+}
+
+@keyframes myanimation {
+    0% {
+       top: 200px;
+        left: 500px;
+    }
+    30% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+         top: 200px;
+        left: 500px;
+/*        transform: rotate(720deg);*/
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+div #mover{
+    
+    position: relative;
+    top: 250px;
+    left: 300px;
+    animation: floatBubble 2s inifnate;
+    animation-direction: normal;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+}
+
+@keyframes floatBubble{
+ 0% {
+        top:0;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+   100% {
+      top: 500px;
+      animation-timing-function: ease-out;
+   }
+
+}*/
